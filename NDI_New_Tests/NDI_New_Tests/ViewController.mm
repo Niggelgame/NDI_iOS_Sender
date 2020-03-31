@@ -93,6 +93,9 @@ void uncaughtExceptionHandler(NSException *exception) {
                         //memset((void*)NDI_video_frame.p_data, 255, NDI_video_frame.xres*NDI_video_frame.yres * 4);
             
                         // We now submit the frame. Note that this call will be clocked so that we end up submitting at exactly 29.97fps.
+                        
+                        
+                        // Here is the point where I first have to set the photoOutput from above (commented) in some way to add it to the pointer of the NDI_video_frame
                         NDIlib_send_send_video_v2(self.pSend, &NDI_video_frame);
                         //printf(&"Sending frame" [ idx]);
     
