@@ -15,29 +15,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f6T-tl-mb3" userLabel="preview view">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f6T-tl-mb3" userLabel="preview view">
                                 <rect key="frame" x="0.0" y="20" width="375" height="545"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I30-n9-y6c">
-                                <rect key="frame" x="258" y="569" width="101" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Stopstreaming"/>
-                                <connections>
-                                    <action selector="stopStreaming:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kGb-vH-meX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIM-50-f0e">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIM-50-f0e">
                                 <rect key="frame" x="72" y="589" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="pleasestart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wGB-Yv-dhe"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I30-n9-y6c">
+                                <rect key="frame" x="258" y="589" width="101" height="30"/>
+                                <state key="normal" title="Stopstreaming"/>
+                                <connections>
+                                    <action selector="stopStreaming:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kGb-vH-meX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="I30-n9-y6c" secondAttribute="bottom" constant="68" id="8AA-f6-M0h"/>
+                            <constraint firstItem="f6T-tl-mb3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8GO-LI-0lT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I30-n9-y6c" secondAttribute="trailing" constant="16" id="H3u-vW-V36"/>
+                            <constraint firstItem="I30-n9-y6c" firstAttribute="top" secondItem="f6T-tl-mb3" secondAttribute="bottom" constant="4" id="JCh-03-rfR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iIM-50-f0e" secondAttribute="bottom" constant="48" id="PcH-jM-1Q1"/>
+                            <constraint firstItem="iIM-50-f0e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="Pde-dT-v2m"/>
+                            <constraint firstItem="I30-n9-y6c" firstAttribute="top" secondItem="f6T-tl-mb3" secondAttribute="bottom" constant="4" id="ci6-f4-rI4"/>
+                            <constraint firstItem="iIM-50-f0e" firstAttribute="top" secondItem="f6T-tl-mb3" secondAttribute="bottom" constant="24" id="ilw-bS-FWc"/>
+                            <constraint firstItem="f6T-tl-mb3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mZO-ec-uYk"/>
+                            <constraint firstItem="f6T-tl-mb3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="unv-fk-SfP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
